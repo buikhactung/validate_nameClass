@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="box">
+<button type="button" onclick="checkRe()">Kiểm tra</button>
+<script>
+    let re = /^[CAP][0-9]{4}[GHIKLM]$/;
+    let room = document.getElementById("box").value;
+    function checkRe() {
+        if(re.test(room) == false ) {
+            alert("tên ko hợp lệ")
+        }else {
+            alert(" tên hợp lệ")
+        }
+    }
+
+</script>
+</body>
+</html>
